@@ -1,13 +1,106 @@
 /*
 // Color Theme Palette
-// Red: #fe2e2e
-// Dark Red: #cb2424
-//
-//
-//
-*/
+// White:  #f8f8fa
+// Gray: #afafaf
+// Red: #cb2424
+// Orange: 	#ff5722
+// Black: #000000
+// Dark gray: 	#9e9e9e
+
+/* Default Start */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
     padding: 0;
     margin: 0;
 }
+
+header,
+footer,
+nav {
+    display: block;
+}
+
+/* Default End */
+
+/* Global Start */
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+/* Global End */
+
+/* Header Start */
+header {
+    background-color:#f8f8fa;
+    padding: 20px;
+    text-align: center;
+    color: #ff5722;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+}
+/* Header End */
+
+/* Navigation Start */
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    color: #f8f8fa;
+    background-color: #ff5722;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+}
+
+nav a:not(:last-child) {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #9e9e9e;
+}
+ 
+nav a:hover,
+nav a:focus {
+    background-color: #9e9e9e;
+}
+
+/* Navigation End */
+
+/* Content Start */
+.content {
+    margin: 20px 0;
+}
+
+.divider {
+    display: flex;
+}
+
+.divider .aside {
+    width: 200px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.divider .middle {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Content End */
+
+
+/* Footer Start */
+footer {
+    text-align: center;
+    color: #666547;
+    padding: 20px;
+
+}
+/* Footer End */
+
